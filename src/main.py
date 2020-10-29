@@ -1,10 +1,8 @@
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QApplication
+import sys
 
-app = QApplication([])
-img = QIcon("../resources/icon.png")
-pxmp = img.pixmap(256, 256)
-if pxmp.save("../resources/icon.ico", "ico"):
-    print("Successful")
+from inline import inline
+
+if len(sys.argv) > 1 and (sys.argv[1] == "inline" or sys.argv[1] == "nogui"):
+    inline(sys.argv[2:])
 else:
-    print("Error")
+    GuiApp().run()

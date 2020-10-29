@@ -1,1 +1,1 @@
-pyinstaller --onefile "D:/Img2Icon/src/main.py" -n "img2icon_(v0.0)" -i "D:/Img2Icon/resources/icon.ico" --hidden-import "PyQt5.sip"
+pyinstaller --onefile "./src/main.py" -n "img2icon_(v0.0)" -i "./resources/icon.ico"
