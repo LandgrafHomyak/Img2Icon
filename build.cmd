@@ -1,1 +1,0 @@
-pyinstaller --onefile "./src/main.py" -n "img2icon_(v0.0)" -i "./resources/icon.ico"
