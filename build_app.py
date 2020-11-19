@@ -11,8 +11,8 @@ try:
     build([
         "--onefile",
         "--windowed",
-        "--name=Convert image to icon.exe",
-        # "--icon=./resources/icon.ico",
+        "--name=Convert image to icon",
+        "--icon=./resources/icon.ico",
         "./src/main/Convert image to icon.py"
     ])
 
@@ -27,9 +27,9 @@ print(f"\033[1m\033[94m\033[4m[{ms()}] Building: 'img2icon.exe'...\033[0m")
 try:
     build([
         "--onefile",
-        "--windowed",
+        "--console",
         "--name=img2icon",
-        # "--icon=./resources/icon.ico",
+        "--icon=./resources/icon.ico",
         "./src/main/img2icon.py"
     ])
 
